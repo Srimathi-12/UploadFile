@@ -1,0 +1,111 @@
+/* Add a wrapper container for centering and responsiveness */
+.csv-uploader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set to full viewport height */
+}
+
+/* Adjust styles for the csv-uploader */
+.csv-uploader {
+    width: 100%;
+    max-width: 400px;
+    /* Set a maximum width for responsiveness */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-input-label {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5; /* Light mode background color */
+    border: 2px dashed #3498db; /* Light mode border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .file-input-label:hover {
+    background-color: #ecf0f1; /* Light mode hover background color */
+    border-color: #2980b9; /* Light mode hover border color */
+  }
+  
+  .browse-icon {
+    font-size: 18px;
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+
+.upload-btn,
+.download-btn,
+.mode-toggle-btn {
+    background-color: #2ecc71;
+    /* Light mode button color */
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover,
+.download-btn:hover,
+.mode-toggle-btn:hover {
+    background-color: #27ae60;
+    /* Light mode button hover color */
+}
+
+.upload-btn:active,
+.download-btn:active,
+.mode-toggle-btn:active {
+    background-color: #218c53;
+    /* Light mode button active color */
+}
+
+.dark-mode {
+    background-color: #2c3e50;
+    /* Dark mode background color */
+    color: white;
+    /* Dark mode text color */
+}
+
+.dark-mode .file-input-label {
+    background-color: #34495e;
+    /* Dark mode background color for file input */
+    border-color: #2980b9;
+    /* Dark mode border color for file input */
+}
+
+.dark-mode .upload-btn,
+.dark-mode .download-btn,
+.dark-mode .mode-toggle-btn {
+    background-color: #3498db;
+    /* Dark mode button color */
+}
+
+.dark-mode .upload-btn:hover,
+.dark-mode .download-btn:hover,
+.dark-mode .mode-toggle-btn:hover {
+    background-color: #2980b9;
+    /* Dark mode button hover color */
+}
+
+.dark-mode .upload-btn:active,
+.dark-mode .download-btn:active,
+.dark-mode .mode-toggle-btn:active {
+    background-color: #21618c;
+    /* Dark mode button active color */
+}
